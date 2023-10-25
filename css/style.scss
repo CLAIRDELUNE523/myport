@@ -5,6 +5,9 @@
    list-style: none;
    text-decoration: none;
 }
+html{
+   scroll-behavior: smooth;
+}
 body{
    background-color: #FEFCFB;
 }
@@ -45,19 +48,20 @@ img{
       z-index: 2;
 
       .hero__text{
-         text-align: center;
+         text-align: left;
          color: white;
          font-family: "Noto Sans JP";
          font-size: 3rem;
 
          span{
-            background: rgb(46, 46, 46);
+            background: rgba(26, 26, 26, 0.986);
          }
       }
    }
 }
 .scrolled{
-   background-color: black;
+   backdrop-filter: blur(0.8rem);
+   background-color: rgba(15, 15, 15, 0.938);
    transition: background-color .2s;
 }
 
@@ -99,7 +103,7 @@ img{
             .list-item{
                color: rgb(255, 255, 255);
                font-family: "Montserrat";
-               font-weight: 600;
+               font-weight: 500;
                position: relative;
 
                &:hover::after{
@@ -122,7 +126,7 @@ img{
                background: #fff;
                color: rgb(29, 29, 29);
                font-family: "Montserrat";
-               font-weight: 800;
+               font-weight: 600;
                display: block;
                height: 2rem;
                width: 5rem;
@@ -134,6 +138,118 @@ img{
       }
    }
 }
+.section__title{
+   text-align: center;
+   font-size: 1.3rem;
+   font-family: "Noto Sans JP";
+   color: rgb(41, 41, 41);
+   margin-bottom: 3rem;
+}
 #about{
+   padding: 3rem 0;
    min-height: 100vh;
+
+   .about__container{
+      margin: 5rem auto;
+      max-width: 900px;
+      padding: 0 20px;
+
+      .section__title{
+         text-align: center;
+         font-size: 1.3rem;
+         font-family: "Noto Sans JP";
+         color: rgb(41, 41, 41);
+         margin-bottom: 3rem;
+      }
+      .about__desc{
+         display: flex;
+         align-items: center;
+         margin-bottom: 3rem;
+
+         img{
+            margin-right: 6rem;
+            height: 20rem;
+         }
+         .about__desc--text{
+            line-height: 2;
+            font-size: 1rem;
+            font-family: "Noto Sans JP";
+            font-weight: 500;
+         }
+      }
+   }
+}
+
+.greeting{
+
+   .sub-title{
+      font-family: "Noto Sans JP";
+      font-size: 1.3rem;
+      color: rgb(241, 241, 241);
+      margin-bottom: 3rem;
+
+      span{
+         background: rgb(49, 49, 49);
+         padding: 0 10px;
+      }
+   }
+}
+.greeting__text--area{
+   color: #242424;
+   font-weight: 500;
+   font-family: "Noto Sans JP";
+   letter-spacing: 1px;
+   line-height: 2;
+}
+#skill{
+   padding: 3rem 0;
+   background-color: rgb(247, 247, 247);
+   min-height: 100vh;
+}
+.skill__container{
+   margin: 5rem auto;
+   max-width: 1200px;
+   padding: 0 20px;
+}
+.skill__desc{
+   .sub-title{
+      font-family: "Noto Sans JP";
+      font-size: 1.3rem;
+      color: rgb(241, 241, 241);
+      margin-bottom: 3rem;
+   }
+   span{
+      background: rgb(49, 49, 49);
+      padding: 0 10px;
+   }
+} 
+.skill__image{
+   display: flex;
+   justify-content: space-between;
+
+   img{
+      height: 300px;
+   }
+}
+.card{
+   width: 30%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background: white;
+   padding: 40px 0;
+   border: 1px solid rgb(226, 226, 226);
+
+   .sub-title{
+      font-family: "Noto Sans JP";
+      font-size: 1.3rem;
+      color: rgb(241, 241, 241);
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+
+      span{
+         background: rgb(49, 49, 49);
+         padding: 0 10px;
+      }
+   }
 }
