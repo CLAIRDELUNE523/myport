@@ -14,6 +14,12 @@ img {
   max-width: 100%;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
 .hero {
   background-image: url(/images/hero_piano.jpg);
   background-position: center;
@@ -51,6 +57,11 @@ img {
   background: rgb(46, 46, 46);
 }
 
+.scrolled {
+  background-color: black;
+  transition: background-color 0.2s;
+}
+
 #header {
   position: fixed;
   top: 0;
@@ -58,6 +69,7 @@ img {
   width: 100%;
   z-index: 100;
   display: flex;
+  transition: background-color 0.2s;
 }
 #header nav {
   max-width: 1200px;
@@ -67,6 +79,7 @@ img {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  transition: padding 0.2s;
 }
 #header nav .logo__area {
   font-size: 1.4rem;
@@ -113,9 +126,7 @@ img {
   border-radius: 0.5rem;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 30px;
+#about {
+  min-height: 100vh;
 }
 /*# sourceMappingURL=style.css.map */
