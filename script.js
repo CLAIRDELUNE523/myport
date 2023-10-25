@@ -7,7 +7,7 @@ window.addEventListener('scroll', function() {
       header.classList.remove('scrolled');
    }
    if(window.scrollY > 400){
-      nav.style.padding = '10px 20px'
+      nav.style.padding = '10px 30px'
    }else{
       nav.style.padding = '100px 30px'
    }
