@@ -2,7 +2,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  list-style: none;
   text-decoration: none;
 }
 
@@ -64,7 +63,7 @@ img {
 .scrolled {
   -webkit-backdrop-filter: blur(0.8rem);
           backdrop-filter: blur(0.8rem);
-  background-color: rgba(15, 15, 15, 0.938);
+  background-color: rgba(15, 15, 15, 0.932);
   transition: background-color 0.2s;
 }
 
@@ -120,8 +119,8 @@ img {
   transition: 0.3s ease-in-out;
 }
 #header nav ul li .contact {
-  background: #fff;
-  color: rgb(29, 29, 29);
+  border: 1px solid #fff;
+  color: rgb(255, 255, 255);
   font-family: "Montserrat";
   font-weight: 600;
   display: block;
@@ -129,7 +128,12 @@ img {
   width: 5rem;
   line-height: 32px;
   text-align: center;
-  border-radius: 0.5rem;
+  transition: 0.2s ease-in-out;
+}
+#header nav ul li .contact:hover {
+  background: #fff;
+  color: #242424;
+  transition: 0.2s ease-in-out;
 }
 
 .section__title {
@@ -230,16 +234,37 @@ img {
   background: white;
   padding: 40px 0;
   border: 1px solid rgb(226, 226, 226);
+  border-radius: 0.5rem;
 }
 .card .sub-title {
   font-family: "Noto Sans JP";
   font-size: 1.3rem;
   color: rgb(241, 241, 241);
   margin-top: 2rem;
-  margin-bottom: 2rem;
 }
 .card .sub-title span {
   background: rgb(49, 49, 49);
   padding: 0 10px;
+}
+
+.skill__desc--text {
+  justify-content: space-between;
+  display: flex;
+  margin-top: 3rem;
+  font-family: "Noto Sans JP";
+}
+.skill__desc--text .skill__title {
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+.skill__desc--text .skill__html {
+  width: 30%;
+}
+.skill__desc--text .skill__css {
+  width: 30%;
+}
+.skill__desc--text .skill__js {
+  width: 30%;
 }
 /*# sourceMappingURL=style.css.map */
