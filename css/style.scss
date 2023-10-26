@@ -38,6 +38,7 @@ img{
    }
 
    .hero__text--area{
+      padding: 0 30px;
       height: 100%;
       width: 100%;
       display: flex;
@@ -62,6 +63,7 @@ img{
    backdrop-filter: blur(0.8rem);
    background-color: rgba(15, 15, 15, 0.932);
    transition: background-color .2s;
+   box-shadow: 0px 8px 49px -20px rgba(0, 0, 0, 0.699);
 }
 
 #header{
@@ -96,6 +98,7 @@ img{
          display: flex;
          align-items: center;
          gap: 40px;
+         list-style: none;
 
          li{
 
@@ -121,7 +124,7 @@ img{
                   transition: .3s ease-in-out;
                }
             }
-            .contact{
+            .contact_btn{
                border: 1px solid #fff;
                color: rgb(255, 255, 255);
                font-family: "Montserrat";
@@ -158,7 +161,7 @@ img{
    .about__container{
       margin: 5rem auto;
       max-width: 900px;
-      padding: 0 20px;
+      padding: 0 30px;
 
       .section__title{
          text-align: center;
@@ -215,7 +218,7 @@ img{
 .skill__container{
    margin: 5rem auto;
    max-width: 1200px;
-   padding: 0 20px;
+   padding: 0 30px;
 }
 .skill__desc{
    .sub-title{
@@ -286,4 +289,85 @@ img{
       width: 30%;
       
    }
+}
+.contact__container{
+      margin: 5rem auto;
+      max-width: 900px;
+      padding: 0 30px;
+}
+.contact__text--area{
+   font-size: 1.4rem;
+   color: #242424;
+   font-weight: 500;
+   font-family: "Noto Sans JP";
+   letter-spacing: 1px;
+   line-height: 2;
+   text-align: center;
+}
+.contact__title{
+   position: relative;
+   display: inline;
+}
+.contact__title::after{
+   content: "";
+   position: absolute;
+   display: block;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 40%;
+   background-color: rgb(139, 212, 255);
+   z-index: -1;
+
+}
+.contact__btn--area{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   margin-top: 2rem;
+   gap: 2rem;
+
+   .mail__btn{
+      display: inline-block;
+      border: 1px solid black;
+      outline: none;
+      color: rgb(255, 255, 255);
+      font-size: 1.4rem;
+      height: 3rem;
+      background: black;
+      font-family: "Noto Sans JP";
+      font-weight: 500;
+      width: 300px;
+      transition: .3s ease-in-out;
+      cursor: pointer;
+
+      &:hover{
+         transform: translate(4px,4px);
+         transition: .3s ease-in-out;
+      }
+   }
+   .twitter__btn{
+      border: 1px solid rgb(139, 212, 255);
+      outline: none;
+      color: rgb(255, 255, 255);
+      font-size: 1.4rem;
+      height: 3rem;
+      background: rgb(139, 212, 255);
+      font-family: "Noto Sans JP";
+      font-weight: 500;
+      width: 300px;
+      transition: .3s ease-in-out;
+      cursor: pointer;
+
+      &:hover{
+         transform: translate(4px,4px);
+         transition: .3s ease-in-out;
+      }
+   }
+}
+#footer{
+   width: 100%;
+   min-height: 20vh;
+   background-color: #f7f7f7;
 }
