@@ -12,6 +12,15 @@ window.addEventListener('scroll', function() {
       nav.style.padding = '100px 30px'
    }
 });
+
+const menuToggle = document.querySelector(".menu-toggle");
+
+menuToggle.addEventListener("click", () =>{
+   menuToggle.classList.toggle("active")
+})
+
+
 var scroll = new SmoothScroll('a[href*="#"]', {
    speed: 500
 });
+

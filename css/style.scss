@@ -6,7 +6,31 @@
 }
 
 body{
+   position: relative;
    background-color: #FEFCFB;
+}
+.top__btn{
+   right: 50px;
+   bottom: 50px;
+   position: fixed;
+   z-index: 10;
+
+   a{
+      display: flex;
+      background: black;
+      border-radius: 50%;
+      width: 55px;
+      aspect-ratio: 1;
+      align-items: center;
+      justify-content: center;
+      transition: .2s ease-in-out;
+
+      &:hover{
+         transform: translateY(-0.3rem);
+         transition: .2s ease-in-out;
+
+      }
+   }
 }
 img{
    max-width: 100%;
@@ -16,6 +40,7 @@ img{
    margin: 0 auto;
    padding: 0 30px;
 }
+
 .hero{
    background-image: url(/images/hero_piano2.jpg);
    background-position: center;
@@ -57,6 +82,21 @@ img{
       }
    }
 }
+@media screen and (max-width: 1085px){
+   .hero__text--area{
+      .hero__text h2{
+         font-size: 4rem;
+      }
+   }
+}
+@media screen and (max-width: 974px){
+   .hero__text--area{
+      .hero__text h2{
+         font-size: 3.5rem;
+      }
+   }
+
+}
 .scrolled{
    backdrop-filter: blur(0.8rem);
    background-color: rgba(15, 15, 15, 0.932);
@@ -83,6 +123,9 @@ img{
       width: 100%;
       transition: padding 0.2s;
 
+      .menu-toggle{
+         display: none;
+      }
       .logo__area{
          font-size: 1.4rem;
       }
@@ -144,6 +187,34 @@ img{
          }
       }
    }
+}
+@media (max-width: 974px){
+   .header__nav--area{
+      display: none;
+   }
+   #header nav .menu-toggle{
+      display: block;
+      cursor: pointer;
+   }
+   
+   .bar{
+      width: 30px;
+      height: 3px;
+      background-color: white;
+      margin: 6px 0;
+      transition: .4s;
+   }
+   .menu-toggle.active .bar:nth-child(1){
+      transform: rotate(-45deg) translate((-5px, 6px));
+   }
+   .menu-toggle.active .bar:nth-child(2){
+      transform: translateX(20px);
+      opacity: 0;
+   }
+   .menu-toggle.active .bar:nth-child(3){
+      transform: rotate(45deg) translate((-5px, -6px));
+   }
+
 }
 .section__title{
    text-align: center;
@@ -217,6 +288,22 @@ img{
    margin: 5rem auto;
    max-width: 1200px;
    padding: 0 30px;
+}
+@media screen and (max-width: 1220px){
+   .skill__container{
+      max-width: 900px;
+
+      .skill__image{
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         gap: 3rem;
+         .card{
+            width: 100%;
+         }
+      }
+   }
 }
 .skill__desc{
    .sub-title{
