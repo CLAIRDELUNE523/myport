@@ -12,3 +12,6 @@ window.addEventListener('scroll', function() {
       nav.style.padding = '100px 30px'
    }
 });
+var scroll = new SmoothScroll('a[href*="#"]', {
+   speed: 500
+});

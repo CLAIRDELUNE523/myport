@@ -4,9 +4,7 @@
    box-sizing: border-box;
    text-decoration: none;
 }
-html{
-   scroll-behavior: smooth;
-}
+
 body{
    background-color: #FEFCFB;
 }
@@ -19,7 +17,7 @@ img{
    padding: 0 30px;
 }
 .hero{
-   background-image: url(/images/hero_piano.jpg);
+   background-image: url(/images/hero_piano2.jpg);
    background-position: center;
    background-size: cover;
    height: 100vh;
@@ -368,6 +366,21 @@ img{
 }
 #footer{
    width: 100%;
-   min-height: 20vh;
+   height: 5vh;
    background-color: #f7f7f7;
+
+   .footer__container{
+      margin: 0 auto;
+      max-width: 900px;
+      padding: 0 30px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+
+      small{
+         font-family: "Montserrat";
+      }
+   }
 }
