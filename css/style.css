@@ -286,7 +286,7 @@ img {
 @media screen and (max-width: 1220px) {
   .skill__container {
     max-width: 900px;
-    width: 90%;
+    width: 90;
   }
   .skill__container .skill__image {
     display: flex;
