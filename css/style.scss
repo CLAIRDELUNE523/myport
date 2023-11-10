@@ -258,6 +258,25 @@ img{
    }
 }
 
+@media screen and (max-width: 1085px){
+   #about{
+
+      .about__container{
+
+         .about__desc{
+            justify-content: space-evenly;
+            
+            img{
+               height: 15rem;
+            }
+
+            .about__desc--text{
+               font-size: 0.9rem;
+            }
+         }
+      }
+   }
+}
 .greeting{
 
    .sub-title{
@@ -269,6 +288,14 @@ img{
       span{
          background: rgb(49, 49, 49);
          padding: 0 10px;
+      }
+   }
+}
+@media screen and (max-width: 1085px){
+   .greeting {
+
+      .greeting__text--area{
+         font-size: 0.9rem;
       }
    }
 }
@@ -292,6 +319,7 @@ img{
 @media screen and (max-width: 1220px){
    .skill__container{
       max-width: 900px;
+      width: 90%;
 
       .skill__image{
          display: flex;
